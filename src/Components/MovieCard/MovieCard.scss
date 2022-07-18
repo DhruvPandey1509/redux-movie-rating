@@ -3,22 +3,33 @@
 .card-item {
     background: $secondary-color;
     cursor: pointer;
+    transition: all 0.3s;
+    min-height: 450px;
+    height: 100%;
+    margin: 10px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.3;
+    }
 }
 
 .card-top {
     height: 300px;
-    img{
+
+    img {
         height: 100%;
         width: 100%;
     }
 }
 
-.card-bottom{
+.card-bottom {
     padding: 20px;
 }
 
 .card-info {
     color: $font-primary;
+
     h4 {
         font-size: 22px;
         font-weight: 400;
